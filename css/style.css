@@ -5547,7 +5547,7 @@ Event
   transition: var(--transition);
 }
 .tab__button__wrap li.nav-item {
-  width: 20%;
+  width: 16.6%;
   padding-right: 10px;
 }
 @media (max-width: 767px) {
@@ -12055,7 +12055,7 @@ Footer Area
     padding-left: 0;
   }
 }
-.footerarea__wrapper .footerarea__about__us {
+.footerarea__wrapper .<li><a href="timetable.html">Timetable</a></li> {
   margin-right: 30px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -12760,3 +12760,10 @@ Dark Mode
 .is_dark .dashboard__table table thead {
   background: var(--whiteColor);
 }/*# sourceMappingURL=style.css.map */
+
+
+
+
+.col-custom {
+  width: 20%;
+}  
