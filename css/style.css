@@ -12081,7 +12081,7 @@ Footer Area
   margin-bottom: 30px;
 }
 .footerarea__wrapper .footerarea__inner .footerarea__content p {
-  color: var(--darkgray);
+  color: var(--whiteColor);
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .footerarea__wrapper .footerarea__inner .footerarea__content p {
@@ -12120,7 +12120,7 @@ Footer Area
   margin-bottom: 12px;
 }
 .footerarea__wrapper .footerarea__inner .footerarea__list ul li a {
-  color: var(--darkgray);
+  color: var(--whiteColor);
   font-size: 16px;
   font-weight: 400;
   font-family: var(--contentFont);
