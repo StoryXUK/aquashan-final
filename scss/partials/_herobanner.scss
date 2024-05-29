@@ -197,7 +197,7 @@ Hero Banner Area
         &.herobanner__img__2 {
             top: 110px;
             left: 50px;
-            animation: cir-anim 6s linear 0s infinite alternate;
+            animation: 3s linear 0s infinite normal none running move5;
             @media #{$device-xl} {
                 top: 64px;
             }

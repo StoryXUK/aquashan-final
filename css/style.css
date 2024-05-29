@@ -2638,7 +2638,7 @@ Hero Banner Area
 .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__2 {
   top: 110px;
   left: 50px;
-  animation: cir-anim 6s linear 0s infinite alternate;
+  animation: 3s linear 0s infinite normal none running move5;
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__2 {
