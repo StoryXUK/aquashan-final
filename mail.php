@@ -1,50 +1,34 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
-        $name = strip_tags(trim($_POST["con_name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["con_email"]), FILTER_SANITIZE_EMAIL);
-        $message = trim($_POST["con_message"]);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_STRING);
+    $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_STRING);
+    $child_name = filter_input(INPUT_POST, 'child_name', FILTER_SANITIZE_STRING);
+    $dob = filter_input(INPUT_POST, 'dob', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Please complete the form and try again.";
-            exit;
-        }
+    $to = "info@aquashan.co.uk";
+    $subject = "New Contact Form Submission";
 
-        // Set the recipient email address.
-        $recipient = "techbootmail@gmail.com";
+    $body = "First Name: $first_name\n";
+    $body .= "Last Name: $last_name\n";
+    $body .= "Child's Name: $child_name\n";
+    $body .= "Date of Birth: $dob\n";
+    $body .= "Email: $email\n";
+    $body .= "Phone: $phone\n";
+    $body .= "Message: $message\n";
 
-        // Set the email subject.
-        $subject = "Edurock - Mail From $name";
+    $headers = "From: info@aquashan.co.uk\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-        // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Message:\n$message\n";
-
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
-
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You! Your message has been sent.";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
-
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent successfully.";
     } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo "Message sending failed.";
     }
-
+} else {
+    echo "Invalid request method.";
+}
 ?>
