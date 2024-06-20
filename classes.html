@@ -1,0 +1,694 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Aquashan</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("is_dark");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.documentElement.classList.remove("is_dark");
+        } 
+    </script>
+
+</head>
+
+
+<body class="body__wrapper">
+    <!-- pre loader area start -->
+    <div id="back__preloader">
+        <div id="back__circle_loader"></div>
+        <!-- <div class="back__loader_logo">
+            <img loading="lazy" src="img/pre.png" alt="Preload">
+        </div> -->
+    </div>
+    </div>
+    <!-- pre loader area end -->
+
+    <!-- Dark/Light area start -->
+    <!-- <div class="mode_switcher my_switcher">
+        <button id="light--to-dark-button" class="light align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512">
+                <path
+                    d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="32" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                    d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94" />
+                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="32" />
+            </svg>
+
+            <span class="light__mode">Light</span>
+            <span class="dark__mode">Dark</span>
+        </button>
+    </div> -->
+    <!-- Dark/Light area end -->
+
+    <main class="main_wrapper overflow-hidden">
+
+
+        <!-- topbar__section__stert -->
+        <div class="topbararea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="topbar__left">
+                            <ul>
+                                <li>
+                                    Call Us: 07783 797 181
+                                </li>
+                                <li>
+                                    - Mail Us: info@aquashan.co.uk
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="topbar__right">
+                            <div class="topbar__icon">
+                                <i class="icofont-location-pin"></i>
+                            </div>
+                            <div class="topbar__text">
+                                <p>The Grange, Rectory Lane, Bookham, KT23 4DZ.</p>
+                            </div>
+                            <div class="topbar__list">
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/people/AquaShan-Swim-School/61560990271577/"><i class="icofont-facebook"></i></a>
+                                    </li>
+
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- topbar__section__end -->
+
+
+        <!-- headar section start -->
+        <header>
+            <div class="headerarea headerarea__3 header__sticky header__area">
+                <div class="container desktop__menu__wrapper">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-6">
+                            <div class="headerarea__left">
+                                <div class="headerarea__left__logo">
+
+                                    <a href="index.html"><img loading="lazy" src="img/logo/logo_1.svg" alt="logo"></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 main_menu_wrap">
+                            <div class="headerarea__main__menu">
+                                <nav>
+                                    <ul>
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="index.html">Home</a>
+                                        </li>
+
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="about.html">About</a>
+                                        </li>
+
+
+
+
+
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="classes.html">Classes<i
+                                                    class="icofont-rounded-down"></i> </a>
+                                            <div class="headerarea__submenu mega__menu__wrapper">
+
+                                                <div class="row">
+                                                    <div class="col-4 mega__menu__single__wrap">
+                                                        <h4 class="mega__menu__title"><a
+                                                                href="baby-swimming.html">Babies </a>
+                                                        </h4>
+                                                        <ul class="mega__menu__item">
+
+                                                            <li><a href="baby-swimming.html">Tiny Tadpoles 6 - 12 months</a></li>
+                                                            <li><a href="baby-swimming.html">Water Wigglers 12 - 18 months</a></li>
+                                                            <li><a href="baby-swimming.html">Giggling Guppies 18 - 24 months</a></li>
+                                                            <li><a href="baby-swimming.html">Playful Paddlers 24 - 36 months</a></li>
+
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 mega__menu__single__wrap">
+                                                        <h4 class="mega__menu__title"><a href="pre-school.html">Pre-School </a>
+                                                        </h4>
+                                                        <ul class="mega__menu__item">
+                                                            <li><a href="pre-school.html">Starfish - Pre schoolers age 3 - 4 years.</a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 mega__menu__single__wrap">
+                                                        <h4 class="mega__menu__title"><a href="swim-academy.html">Swim Academy</a></h4>
+                                                        <ul class="mega__menu__item">
+                                                            <li><a href="swim-academy.html">Clownfish Level 1</a></li>
+                                                            <li><a href="swim-academy.html">Sunfish Level 2</a></li>
+                                                            <li><a href="swim-academy.html">Angelfish Level 3</a></li>
+                                                            <li><a href="swim-academy.html">Firefish Level 4</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 mega__menu__single__wrap sp_top_30">
+                                                        <div class="mega__menu__img">
+                                                            <a href="classes.html"><img loading="lazy"
+                                                                    src="img/mega/mega_menu_2.svg" alt="Mega Menu"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li><a class="headerarea__has__dropdown" href="lessons.html">Lessons
+                                            <i class="icofont-rounded-down"></i>
+                                        </a>
+                                        <ul class="headerarea__submenu headerarea__submenu--third--wrap">
+                                            <li><a href="1-1.html">1-1 </a> </li>
+                                            <li><a href="adult.html">Adult </a> </li>
+                                            <li><a href="send.html">SEND </a> </li>
+                                           
+                                        </ul>
+                                    </li>
+
+
+
+                                        <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="parent-information.html">Parent
+                                                Info</a>
+                                        </li>
+                                        <!-- <li class="mega__menu position-static">
+                                            <a class="headerarea__has__dropdown" href="timetable.html">Timetable</a>
+                                        </li> -->
+
+
+
+                                        <!-- <li><a href="ecommerce/shop.html">Information<span class="mega__menu__label">For
+                                                    Parents</span></a></li> -->
+
+
+
+
+                                    </ul>
+
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="headerarea__right">
+
+
+
+                                <div class="headerarea__login">
+                                    <a href="contact.html"><i class="icofont-user-alt-5"></i></a>
+                                </div>
+                                <div class="headerarea__button">
+                                    <a href="contact.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="container-fluid mob_menu_wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="mobile-logo">
+                                <a class="logo__dark" href="#"><img loading="lazy" src="img/logo/logo_1.svg"
+                                        alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="header-right-wrap">
+
+                                <div class="headerarea__right">
+                                    <nav>
+
+                                    </nav>
+
+                                </div>
+
+                                <div class="mobile-off-canvas">
+                                    <a class="mobile-aside-button" href="#"><i class="icofont-navigation-menu"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header section end -->
+
+        <!-- Mobile Menu Start Here -->
+        <div class="mobile-off-canvas-active">
+            <a class="mobile-aside-close"><i class="icofont  icofont-close-line"></i></a>
+            <div class="header-mobile-aside-wrap">
+
+                <div class="mobile-menu-wrap headerarea">
+
+                    <div class="mobile-navigation">
+                        <nav>
+                            <ul class="mobile-menu">
+
+                                <li class="mega__menu position-static">
+                                    <a class="headerarea__has__dropdown" href="index.html">Home</a>
+                                </li>
+
+                                <li class="mega__menu position-static">
+                                    <a class="headerarea__has__dropdown" href="about.html">About</a>
+                                </li>
+                                <li class="mega__menu position-static">
+                                    <a class="headerarea__has__dropdown" href="timetable.html">Classes</a>
+                                </li>
+
+                                <li class="mega__menu position-static">
+                                    <a class="headerarea__has__dropdown" href="lessons.html">Lessons</a>
+                                </li>
+                                <li class="mega__menu position-static">
+                                    <a class="headerarea__has__dropdown" href="parent-information.html">Parent Info</a>
+                                </li>
+                                <!-- <li class="mega__menu position-static">
+                                    <a class="headerarea__has__dropdown" href="timetable.html">Timetable</a>
+                                </li> -->
+
+
+
+                               
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="mobile-curr-lang-wrap">
+
+
+                    <!-- <div class="single-mobile-curr-lang">
+                                <a class="mobile-currency-active" href="#">Currency <i class="icofont-thin-down"></i></a>
+                                <div class="lang-curr-dropdown curr-dropdown-active">
+                                    <ul>
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                        <li><a href="#">Real</a></li>
+                                        <li><a href="#">BDT</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+                    <!-- <div class="single-mobile-curr-lang">
+                        <a class="mobile-account-active" href="#">My Account <i class="icofont-thin-down"></i></a>
+                        <div class="lang-curr-dropdown account-dropdown-active">
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="login.html">/ Create Account</a></li>
+                                <li><a href="login.html">My Account</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="mobile-social-wrap">
+                    <a class="facebook" target="_blank" href="https://www.facebook.com/people/AquaShan-Swim-School/61560990271577/"><i class="icofont icofont-facebook"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu end Here -->
+
+
+        <!-- theme fixed shadow -->
+        <div>
+            <div class="theme__shadow__circle"></div>
+            <div class="theme__shadow__circle shadow__right"></div>
+        </div>
+        <!-- theme fixed shadow -->
+
+        
+
+
+        <!-- eventlistarea__section__start  -->
+        <div class="eventlistarea sp_top_50 sp_bottom_100">
+
+            <div class="container">
+                <div class="eventlistarea__bg">
+                    <svg width="938" height="919" viewBox="0 0 938 919" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M926.588 668.954C845.79 881.299 578.082 976.498 328.645 881.587C79.2083 786.675 -57.5003 537.594 23.2975 325.25C104.095 112.905 842.659 -201.917 722.687 181.03C612.239 533.576 1007.39 456.609 926.588 668.954Z"
+                            fill="url(#paint0_linear_141_3)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_141_3" x1="621.24" y1="112.617" x2="328.645" y2="881.586"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.9999" stop-color="#FBAED8" stop-opacity="0.08" />
+                                <stop offset="1" stop-color="#B64AA4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="row eventarea__wraper" data-aos="fade-up">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <div class="section__title eventarea__section__title">
+                            <div class="section__title__button">
+                                <div class="default__small__button">Aquashan Classes</div>
+                            </div>
+                            <div class="section__title__heading heading__underline">
+                                <h2>We Have Many Classes For All Ages</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="eventarea__content">
+                            <p>At Aquashan, we believe that learning to swim is a vital life <br>skill
+                                that
+                                opens up a world of fun and adventure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row" data-aos="fade-up">
+                    <div class="col-xl-12">
+                        <ul class="nav  tab__button__wrap" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="single__tab__link active" data-bs-toggle="tab"
+                                    data-bs-target="#projects__one" type="button">Baby Swimming</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="single__tab__link" data-bs-toggle="tab" data-bs-target="#projects__two"
+                                    type="button">Pre Schoolers</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="single__tab__link" data-bs-toggle="tab" data-bs-target="#projects__three"
+                                    type="button">Swim Accademy</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="single__tab__link" data-bs-toggle="tab" data-bs-target="#projects__four"
+                                    type="button">Thursday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="single__tab__link" data-bs-toggle="tab" data-bs-target="#projects__five"
+                                    type="button">Friday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="single__tab__link" data-bs-toggle="tab" data-bs-target="#projects__six"
+                                    type="button">Saturday</button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div> -->
+
+                <div class="tab-content tab__content__wrapper" id="myTabContent">
+                    <div class="tab-pane fade active show" id="projects__one" role="tabpanel"
+                        aria-labelledby="projects__one">
+                        <div class="social__wrapper">
+                            
+
+                            <div class="single__event__wraper single__event__wraper__2" data-aos="fade-up">
+
+                                <div class="eventarea__content__wraper">
+                                    <div class="eventarea__list">
+                                        <ul>
+                                            <li>
+                                                <i class="icofont-clock-time"></i> 30 minutes
+                                            </li>
+                                            <li>
+                                                <a href="instructor-details.html">Shannon Patterson</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="single__event__heading">
+                                        <h4><a href="baby-swimming.html">Baby Swimming</a></h4>
+                                    </div>
+                                    <div class="single__event__button">
+                                        <a href="baby-swimming.html">Read More <i class="icofont-simple-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="eventarea__img">
+                                    <img loading="lazy"  src="img/timetable/baby.jpg" alt="event">
+                                </div>
+                            </div>
+
+                            <div class="single__event__wraper single__event__wraper__2" data-aos="fade-up">
+
+                                <div class="eventarea__content__wraper">
+                                    <div class="eventarea__list">
+                                        <ul>
+                                            <li>
+                                                <i class="icofont-clock-time"></i> 30 minutes
+                                            </li>
+                                            <li>
+                                                <a href="instructor-details.html">Shannon Patterson</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="single__event__heading">
+                                        <h4><a href="pre-school.html">Pre School</a></h4>
+                                    </div>
+                                    <div class="single__event__button">
+                                        <a href="pre-school.html">Read More <i class="icofont-simple-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="eventarea__img">
+                                    <img loading="lazy"  src="img/timetable/pre-school.jpg" alt="event">
+                                </div>
+                            </div>
+
+                            <div class="single__event__wraper single__event__wraper__2" data-aos="fade-up">
+
+                                <div class="eventarea__content__wraper">
+                                    <div class="eventarea__list">
+                                        <ul>
+                                            <li>
+                                                <i class="icofont-clock-time"></i> 30 minutes
+                                            </li>
+                                            <li>
+                                                <a href="instructor-details.html">Shannon Patterson</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="single__event__heading">
+                                        <h4><a href="swim-academy.html">Swim Academy</a></h4>
+                                    </div>
+                                    <div class="single__event__button">
+                                        <a href="swim-academy.html">Read More <i class="icofont-simple-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="eventarea__img">
+                                    <img loading="lazy"  src="img/timetable/swim-academy.jpg" alt="event">
+                                </div>
+                            </div>
+
+                            
+
+
+                        </div>
+                    </div>
+
+
+
+                    
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- eventlistarea__section__end  -->
+
+ 
+        <!-- footer__section__start -->
+        <footer class="footerarea footerarea__image" style="background-image:url(img/footer/footer_bg.jpg)">
+            <div class="container">
+
+
+                <div class="footerarea__wrapper footerarea__wrapper__2">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
+                            <div class="footerarea__inner">
+                                <li><a href=" timetable.html">Timetable</a></li>
+                                <div class="footerarea__heading">
+                                    <h3>About us</h3>
+                                </div>
+                                <div class="footerarea__content">
+                                    <p>At Aquashan, we believe that learning to swim is a vital life <br>skill
+                                        that opens up a world of fun and adventure.</p>
+                                </div>
+                                <div class="foter__bottom__text">
+                                    <div class="footer__bottom__icon">
+                                        <i class="icofont-clock-time"></i>
+                                    </div>
+                                    <div class="footer__bottom__content">
+                                        <h6>Opening Houres</h6>
+                                        <span>Mon - Sat(9.00 - 18.00)</span>
+                                        <span>Sunday - Closed</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3  col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="footerarea__inner">
+                                <div class="footerarea__heading">
+                                    <h3>Usefull Links</h3>
+                                </div>
+                                <div class="footerarea__list">
+                                    <ul>
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="instructor-details.html">Teachers</a>
+                                        </li>
+                                        <li>
+                                            <a href="parent-information.html">Facilities</a>
+                                        </li>
+                                        <li>
+                                            <a href="parent-information.html">How to book</a>
+                                        </li>
+                                        <!-- <li>
+                                            <a href="#">Gallery</a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+                            <div class="footerarea__inner footerarea__padding__left">
+                                <div class="footerarea__heading">
+                                    <h3>Course</h3>
+                                </div>
+                                <div class="footerarea__list">
+                                    <ul>
+                                        <li><a href="baby-swimming.html">Baby swimming</a></li>
+                                        <li><a href="pre-schoolers.html">Pre-schoolers</a></li>
+                                        <li><a href="swim-academy.html">Swim Academy</a></li>
+                                        <li><a href="1-1.html">1-1 lessons</a></li>
+                                        <li><a href="adult.html">Adult 1-1 lessons</a></li>
+                                        <li><a href="send.html">SEND 1-1 lessons</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="footerarea__copyright__wrapper footerarea__copyright__wrapper__2">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="copyright__logo">
+                                <a href="/"><img loading="lazy" src="img/logo/logo_1.svg" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="footerarea__copyright__content footerarea__copyright__content__2">
+                                <p>Copyright © <span>2024</span> Aquashan. Website Made with
+                                    &#9825; by <a target="_blank" href="https://www.story-x.co.uk/">StoryX</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="footerarea__icon footerarea__icon__2">
+                                <ul>
+                                    <li><a target="_blank"
+                                            href="https://www.facebook.com/profile.php?id=61560990271577"><i
+                                                class="icofont-facebook"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- footer__section__end -->
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
+        } 
+    </script>
+
+
+</body>
+
+</html>
