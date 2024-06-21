@@ -2615,39 +2615,40 @@ Hero Banner Area
 }
 .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__1 {
   left: 40px;
-  bottom: 233px;
+  bottom: 25px;
   opacity: 0.33;
   animation: 3s linear 0s infinite normal none running move5;
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__1 {
-    bottom: 112px;
+    bottom: 45px;
   }
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__1 {
-    bottom: 112px;
+    bottom: 45px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__1 {
     left: 248px;
-    bottom: 143px;
+    bottom: 43px;
   }
 }
 .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__2 {
-  top: 110px;
+  top: 60px;
   left: 50px;
+  /* opacity: 0.33; */
   animation: 3s linear 0s infinite normal none running move5;
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__2 {
-    top: 64px;
+    top: 40px;
   }
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__2 {
-    top: 75px;
+    top: 5px;
     left: 30px;
   }
 }
@@ -2658,8 +2659,9 @@ Hero Banner Area
   }
 }
 .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__3 {
-  top: 50px;
+  top: 5px;
   left: 210px;
+  opacity: 0.33;
   animation: 3s linear 0s infinite alternate none running dot-anim;
 }
 @media (max-width: 767px) {
