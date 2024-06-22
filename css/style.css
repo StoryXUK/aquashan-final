@@ -2636,7 +2636,7 @@ Hero Banner Area
   }
 }
 .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__2 {
-  top: 60px;
+  top: 30px;
   left: 50px;
   /* opacity: 0.33; */
   animation: 3s linear 0s infinite normal none running move5;
@@ -2671,7 +2671,7 @@ Hero Banner Area
   }
 }
 .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__4 {
-  top: 80px;
+  top: 10px;
   left: 872px;
   animation: dot-anim-2 3s linear 0s infinite alternate;
 }
@@ -2681,7 +2681,7 @@ Hero Banner Area
   }
 }
 .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__5 {
-  top: 100px;
+  top: 10px;
   right: 110px;
   animation: 3s linear 0s infinite alternate none running dot-anim-2;
 }
@@ -2700,6 +2700,7 @@ Hero Banner Area
   .herobannerarea__icon__2 .herobanner__common__img.herobanner__img__5 {
     top: 0px;
     right: 0px;
+    display: none;
   }
 }
 

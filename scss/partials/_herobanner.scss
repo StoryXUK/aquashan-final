@@ -195,14 +195,14 @@ Hero Banner Area
             }
         }
         &.herobanner__img__2 {
-            top: 110px;
+            top: 60px;
             left: 50px;
             animation: 3s linear 0s infinite normal none running move5;
             @media #{$device-xl} {
                 top: 64px;
             }
             @media #{$device-lg} {
-                top: 75px;
+                top: 55px;
                 left: 30px;
             }
             @media #{$device-sm} {
@@ -211,7 +211,7 @@ Hero Banner Area
             }
         }
         &.herobanner__img__3 {
-            top: 50px;
+            top: 20px;
             left: 210px;
             animation: 3s linear 0s infinite alternate none running dot-anim;
             @media #{$device-sm} {
@@ -220,11 +220,12 @@ Hero Banner Area
             }
         }
         &.herobanner__img__4 {
-            top: 80px;
+            top: 30px;
             left: 872px;
             animation: dot-anim-2 3s linear 0s infinite alternate;
             @media #{$device-lg} {
                 left: 595px;
+                display: none;
             }
         }
         &.herobanner__img__5 {
@@ -237,10 +238,12 @@ Hero Banner Area
             @media #{$device-lg} {
                 top: 13px;
                 right: 90px;
+                display: none;
             }
             @media #{$device-sm} {
                 top: 0px;
                 right: 0px;
+                display: none;
             }
         }
     }
