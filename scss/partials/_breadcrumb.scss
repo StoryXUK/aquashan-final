@@ -61,18 +61,22 @@ Breadcrumb Area
         &.shape__icon__img__1 {
             bottom: 60px;
             left: 165px;
+            opacity: 0.33;
             animation: 3s linear 0s infinite normal none running move5;
             @media #{$device-lg} {
                 bottom: 21px;
                 left: 50px;
+
             }
             @media #{$device-md} {
                 bottom: 0px;
                 left: 14px;
+                display: none;
             }
             @media #{$device-sm} {
                 bottom: 0px;
                 left: 0px;
+                display: none;
             }
         }
         &.shape__icon__img__2 {
@@ -111,10 +115,12 @@ Breadcrumb Area
             @media #{$device-md} {
                 top: 157px;
                 right: 40px;
+                display: none;
             }
             @media #{$device-sm} {
                 top: 212px;
                 right: 30px;
+                display: none;
             }
         }
     }
