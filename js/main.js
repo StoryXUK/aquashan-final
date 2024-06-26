@@ -728,30 +728,3 @@ var swiper = new Swiper(".modal__gallery", {
 
   lineChart()
   pieChart()
-
-
-
-
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const headers = document.querySelectorAll('.accordion-header');
-
-    headers.forEach(header => {
-        header.addEventListener('click', function () {
-            const content = this.nextElementSibling;
-            const isActive = content.classList.contains('active');
-
-            // Hide all accordion content
-            document.querySelectorAll('.accordion-content').forEach(item => {
-                item.classList.remove('active');
-                item.style.display = 'none';
-            });
-
-            // Toggle the clicked content
-            if (!isActive) {
-                content.classList.add('active');
-                content.style.display = 'block';
-            }
-        });
-    });
-});
