@@ -12771,3 +12771,14 @@ Dark Mode
 .col-custom {
   width: 20%;
 }  
+
+
+
+
+.accordion-content {
+  display: none; /* Default to hidden */
+}
+
+.accordion-content.active {
+  display: block; /* Show when active */
+}

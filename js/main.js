@@ -739,13 +739,17 @@ var swiper = new Swiper(".modal__gallery", {
     headers.forEach(header => {
         header.addEventListener('click', function () {
             const content = this.nextElementSibling;
-            const isActive = content.style.display === 'block';
+            const isActive = content.classList.contains('active');
 
+            // Hide all accordion content
             document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.remove('active');
                 item.style.display = 'none';
             });
 
+            // Toggle the clicked content
             if (!isActive) {
+                content.classList.add('active');
                 content.style.display = 'block';
             }
         });
