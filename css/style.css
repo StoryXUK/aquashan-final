@@ -13851,7 +13851,7 @@ Footer Area
   }
 }
 
-.footerarea__wrapper .<li><a href="timetable.html">Timetable</a></li> {
+.footerarea__wrapper {
   margin-right: 30px;
 }
 
@@ -14764,3 +14764,17 @@ Dark Mode
 }
 
 
+
+/* Apply the class only on screens narrower than 768px (i.e., mobile) */
+@media (min-width: 768px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+/* Apply the class only on screens narrower than 768px (i.e., mobile) */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
