@@ -14769,14 +14769,14 @@ Dark Mode
 
 
 @media (min-width: 768px) {
-  .hide-on-mobile {
+  .hide-on-desktop {
     display: none;
   }
 }
 
 
 @media (max-width: 768px) {
-  .hide-on-desktop {
+  .hide-on-mobile {
     display: none;
   }
 }
