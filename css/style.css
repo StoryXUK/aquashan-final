@@ -14768,14 +14768,14 @@ Dark Mode
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .hide-on-mobile {
     display: none;
   }
 }
 
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .hide-on-desktop {
     display: none;
   }
