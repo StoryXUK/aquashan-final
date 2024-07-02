@@ -14775,9 +14775,9 @@ Dark Mode
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .hide-on-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
