@@ -728,3 +728,29 @@ var swiper = new Swiper(".modal__gallery", {
 
   lineChart()
   pieChart()
+
+
+  function openVideo() {
+    let modal = document.getElementById("videoModal");
+    let video = document.getElementById("popupVideo");
+
+    modal.style.display = "flex";
+    video.play();
+}
+
+function closeVideo() {
+    let modal = document.getElementById("videoModal");
+    let video = document.getElementById("popupVideo");
+
+    modal.style.display = "none";
+    video.pause();
+    video.currentTime = 0; // Reset video to start
+}
+
+// Close modal when clicking outside the video
+window.onclick = function(event) {
+    let modal = document.getElementById("videoModal");
+    if (event.target === modal) {
+        closeVideo();
+    }
+}
